@@ -22,13 +22,13 @@ body{
     font-size: 1.5rem;
 }
 
-.navi-bar ul{
+.navi-bar-ul{
     margin:0;
     padding: 0;
     display: flex;
 }
 
-.navi-bar li{
+.navi-bar-li{
     list-style: none;
     background-color: black;
 }
@@ -36,12 +36,20 @@ nav ul li .current{
     color: white;
     font-weight: bolder;
 }
-.navi-bar li a{
-    display: block;
-    padding: 1rem;
+.navi-bar-li-a{
+    display: inline-block;
+    padding: 1rem 0.5rem;
     text-decoration: none;
-    color: gray;
+    color: #808080;
 }
+
+.dropdwn-adjust{
+    display: inline-block;
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    color: #808080;
+}
+
 .navi-bar  a:hover, a:focus{
     color:#ffbf00;
 }
@@ -92,6 +100,9 @@ nav ul li .current{
         text-align: center;
     }
     .navlinks li a{
+        padding: .5rem 1rem;
+    }
+    .dropdwn-adjust{
         padding: .5rem 1rem;
     }
     .navlinks.active{
